@@ -11,7 +11,7 @@ find_package(GTest REQUIRED)
 
 # Ejecutable de tests
 add_executable(tests
-    tests.cpp
+    tests/test.cpp
 )
 
 target_include_directories(tests PRIVATE ../libs)
@@ -19,3 +19,12 @@ target_link_libraries(tests GTest::GTest GTest::Main)
 
 include(GoogleTest)
 gtest_discover_tests(tests)
+
+add_executable(main
+    src/main.cpp
+)
+add_custom_target(run
+    COMMAND main
+    DEPENDS main
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+)
