@@ -7,7 +7,7 @@ Este repositorio funciona como un _template_ mínimo para proyectos en C++ que u
 Puedes obtener una copia ejecutando:
 
 ```bash
-git clone <url-del-repositorio> mi-proyecto
+git clone git@github.com:TuteMthCD/cpp-tests-proyect.git
 ```
 
 Luego entra en la carpeta creada para comenzar a trabajar.
